@@ -4,13 +4,13 @@
 
 《从细胞到人体：生命系统自组织的三维演化》
 
-**From Cell to Human Body: A 3D Visualization of Biological Self-Organization**
+From Cell to Human Body: A 3D Visualization of Biological Self-Organization
 
 ## Purpose
 
-Generate a 180-second 3DGS-style biomedical documentary visualization. The visual narrative begins with a single cell-like system and progresses through division, differentiation, tissue-layer morphogenesis, transparent organ-system emergence, system coupling, and a non-realistic human-body outline.
+Generate a 180-second biomedical-documentary-style 3DGS-like visualization. The video uses abstract particles, translucent membranes, tissue layers, anatomical-like organ systems, and system-coupling networks to express a multi-scale self-organizing life system.
 
-## Style
+## Visual Requirements
 
 - biomedical visualization
 - developmental biology aesthetic
@@ -19,7 +19,7 @@ Generate a 180-second 3DGS-style biomedical documentary visualization. The visua
 - organ system emergence
 - microscopic-to-anatomical scale transition
 - systems biology illustration
-- 3DGS-style gaussian splatting rendering
+- Gaussian-splatting-like rendering
 - semi-transparent tissue layers
 - cellular self-organization
 
@@ -29,11 +29,9 @@ Generate a 180-second 3DGS-style biomedical documentary visualization. The visua
 python scripts/render_cell_to_human_biomedical_3dgs.py --duration 180 --fps 4 --width 960 --height 540
 ```
 
-## Higher Quality Command
+## macOS Compatibility
 
-```bash
-python scripts/render_cell_to_human_biomedical_3dgs.py --duration 180 --fps 6 --width 1280 --height 720
-```
+The renderer writes a temporary AVI/MJPG stream before FFmpeg encodes the final H.264 MP4. This avoids common macOS OpenCV `mp4v` output failures.
 
 ## Output
 
@@ -42,6 +40,6 @@ assets/videos/cell_to_human_body_biomedical_3dgs_180s.mp4
 assets/posters/cell_to_human_body_biomedical_3dgs_poster.png
 ```
 
-## Safety Boundary
+## Boundary
 
-This skill must remain abstract and educational. Do not output wet-lab protocols, gene sequences, vectors, cloning workflows, embryo operations, or actionable biological engineering parameters. Do not depict laboratories, cloning facilities, mechanical assembly lines, or blood/gore.
+Keep the video abstract, educational, non-operational, non-mechanical, non-gory, and documentary-like.
