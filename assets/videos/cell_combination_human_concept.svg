@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="从单细胞到人类：生命体自组织的三维演化 概念动画">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%"><stop offset="0%" stop-color="#10234a"/><stop offset="55%" stop-color="#030712"/><stop offset="100%" stop-color="#01030a"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      text{font-family:'PingFang SC','Microsoft YaHei',sans-serif}.soft{filter:url(#glow)}
+      .pulse{animation:pulse 4s ease-in-out infinite}.spin{transform-origin:center;animation:spin 24s linear infinite}.drift{animation:drift 14s ease-in-out infinite}.appear{animation:appear 18s ease-in-out infinite}
+      @keyframes pulse{0%,100%{opacity:.35;transform:scale(.96)}50%{opacity:.95;transform:scale(1.05)}}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes drift{0%,100%{transform:translateX(-20px)}50%{transform:translateX(35px)}}
+      @keyframes appear{0%,35%{opacity:0}50%,100%{opacity:1}}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <text x="58" y="82" fill="#f8fafc" font-size="42" font-weight="700">从单细胞到人类</text>
+  <text x="60" y="120" fill="#c7d2fe" font-size="22">生命体自组织的三维演化｜安全抽象科学可视化</text>
+  <g class="soft drift">
+    <circle cx="220" cy="360" r="86" fill="#93c5fd" opacity=".15" stroke="#bfdbfe" stroke-width="2"/>
+    <circle cx="220" cy="360" r="28" fill="#fef3c7" opacity=".55"/>
+    <path d="M190 330 C245 300 180 420 250 388" fill="none" stroke="#fde68a" stroke-width="4" opacity=".65"/>
+    <circle class="pulse" cx="220" cy="360" r="116" fill="none" stroke="#93c5fd" stroke-width="3" opacity=".35"/>
+  </g>
+  <g class="soft spin">
+    <circle cx="470" cy="320" r="22" fill="#93c5fd" opacity=".75"/><circle cx="520" cy="380" r="22" fill="#fde68a" opacity=".75"/><circle cx="430" cy="410" r="22" fill="#c4b5fd" opacity=".75"/><circle cx="560" cy="300" r="22" fill="#fca5a5" opacity=".75"/><circle cx="482" cy="462" r="22" fill="#67e8f9" opacity=".75"/>
+    <path d="M470 320 L520 380 L430 410 L560 300 L482 462" stroke="#bfdbfe" stroke-width="2" opacity=".3" fill="none"/>
+  </g>
+  <g class="soft appear">
+    <ellipse cx="890" cy="300" rx="90" ry="115" fill="#dbeafe" opacity=".10" stroke="#bfdbfe"/>
+    <circle cx="890" cy="165" r="52" fill="#93c5fd" opacity=".15" stroke="#bfdbfe"/>
+    <line x1="890" y1="210" x2="890" y2="445" stroke="#dbeafe" stroke-width="8" opacity=".25"/>
+    <path d="M830 270 C880 330 925 340 950 425" stroke="#60a5fa" stroke-width="4" opacity=".55" fill="none"/>
+    <path d="M870 285 C820 350 800 435 775 520" stroke="#f97316" stroke-width="4" opacity=".55" fill="none"/>
+    <circle class="pulse" cx="865" cy="300" r="20" fill="#fb923c" opacity=".8"/>
+    <ellipse cx="845" cy="285" rx="28" ry="48" fill="#a5b4fc" opacity=".32"/><ellipse cx="925" cy="285" rx="28" ry="48" fill="#a5b4fc" opacity=".32"/>
+  </g>
+  <text x="60" y="640" fill="#fef3c7" font-size="22">理解生命，而非制造生命：分裂、分化、组织、反馈与系统耦合的涌现过程</text>
+  <text x="60" y="676" fill="#94a3b8" font-size="16">不含真实实验流程、基因编辑、克隆步骤、胚胎操作或可操作生物工程参数</text>
+</svg>
